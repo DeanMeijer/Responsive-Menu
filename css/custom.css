@@ -1,0 +1,140 @@
+html , body {
+  height: 100%;
+}
+
+*, h1 {
+  font-family: 'Source sans Pro';
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+a:hover {
+  color: #fff;
+  background: #0094b4;
+}
+
+header {
+  background: #00abd0;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#toggleMenu, #menuOut {
+  display: none;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline;
+  float: left;
+}
+
+header ul li a {
+  color: #fff;
+  padding: 20px 30px;
+  display: block;
+}
+
+h1 {
+  margin-top: 70px;
+  font-size: 4em;
+  color: #00abd0;
+}
+
+.selected {
+  background-color: #0094b4;
+}
+
+@media only screen and (max-width: 64.063em) {
+
+  header ul li a {
+    padding: 20px 15px;
+    font-size: .9em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .row {
+    width: 95%;
+  }
+
+}
+
+
+@media only screen and (max-width: 40.063em) {
+
+  header ul {
+    display: none;
+  }
+
+  #toggleMenu {
+    display: block;
+    margin: 30px;
+  }
+
+  header {
+    background: none;
+  }
+
+  .row {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  a:hover {
+    background: none;
+  }
+
+  #menuOut {
+    display: block;
+    cursor: pointer;
+    margin: 30px 0 40px 30px;
+    background: none;
+  }
+
+  header ul {
+    background: #00abd0;
+    height: 100%;
+    position: absolute;
+    top: -30px;
+    left: -20px;
+  }
+
+  header ul li {
+    display: block !important;
+    clear: both;
+    background: #00a1c4;
+    width: 100%;
+  }
+
+  header ul li a {
+    padding: 10px 38px;
+  }
+
+  header ul li a:hover {
+    background: #0094b4;
+  }
+
+
+}
